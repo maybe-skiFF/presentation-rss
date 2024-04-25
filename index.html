@@ -16,8 +16,75 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					<h3 class="r-fit-text">Promises JS</h3>
+					<p>presentation by <a href="https://github.com/">maybe-skiFF</a></p>
+				</section>
+
+				<section>
+					<h3>Introduction to promises</h3>
+				</section>
+
+				<section>
+					<h4>About Promises</h4>
+					<p class="fragment">
+						- Promises are objects representing the eventual completion or failure of an asynchronous operation
+					</p>
+					<p class="fragment">
+						- They are widely used in JavaScript to handle asynchronous tasks such as fetching data from a server, reading files, or executing animations
+					</p>
+				</section>
+
+				<section>
+					<h4>Structure of Promise</h4>
+					<p class="fragment">Promises have three states: <span style="color: green;" class="fragment">pending</span>, <span style="color: green;" class="fragment">fulfilled</span> or <span style="color: green;" class="fragment">rejected</span></p>
+				</section>
+
+				<section>
+					<h4>Creating Promises</h4>
+					<p class="fragment">
+						- We can create a Promise using the <code style="color: green;">new Promise()</code> constructor, passing a callback function with resolve and reject parameters.
+					</p>
+					<p class="fragment">
+						- Inside the callback, we perform our asynchronous operation and call <code style="color: green;">resolve</code> when it succeeds or <code style="color: green;">reject</code> when it fails.
+					</p>
+				</section>
+
+				<section>
+					<h4>Chaining Promises</h4>
+					<p class="fragment">- Promises support chaining, allowing us to execute multiple asynchronous operations sequentially.</p>
+					<p class="fragment">- We can chain promises using <span style="color: green;" class="fragment">.then()</span> and <span style="color: green;" class="fragment">.catch()</span> methods.</p>
+					<p class="fragment">- Also promises have <span style="color: green;">.finally()</span> method.</p>
+				</section>
+
+				<section>
+					<h4>Main promise methods</h4>
+					<p class="fragment" style="color: green;">Promise.all()</p>
+					<p class="fragment" style="color: green;">Promise.race()</p>
+					<p class="fragment" style="color: green;">Promise.allSettled()</p>
+					<p class="fragment" style="color: green;">Promise.any()</p>
+					<p class="fragment" style="color: green;">Promise.withResolvers()</p>
+				</section>
+
+				<section>
+					<h4><span style="color: green;">Async/Await</span> in Promises</h4>
+					<p class="fragment">Async functions provide a more readable way to work with asynchronous code</p>
+				</section>
+
+				<section>
+					<h4>Best Practices</h4>
+					<p class="fragment">- Always handle promise rejections using <span style="color: green;">.catch()</span> to avoid uncaught promise errors.</p>
+					<p class="fragment">- Use <span style="color: green;">Promise.all()</span> and <span style="color: green;">Promise.race()</span></p>
+					<p class="fragment">- Prefer <span style="color: green;">async/await</span> syntax</p>
+				</section>
+
+				<section>
+					<h4>Conclusion</h4>
+				</section>
+
+				<section>
+					<h4>Thank you for your attention</h4>
+				</section>
 			</div>
 		</div>
 
@@ -31,6 +98,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				slideNumber: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
